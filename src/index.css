@@ -1,0 +1,593 @@
+body {
+  font-family: Inter;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.header {
+  width: 100%;
+  height: 86px;
+  background: #262562;
+}
+
+.navbar {
+  width: 220px;
+  height: 100vh;
+  border: 2px solid #d8d8d8;
+  background: #fff;
+  position: fixed;
+  top: 94px;
+  left: 8px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+li {
+  cursor: pointer;
+  color: #000;
+  font-family: Inter;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-flex;
+  padding: 17px 3px 13px 9px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 7px;
+  position: relative;
+  text-decoration: none;
+}
+
+li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+li:hover::after {
+  width: 100%;
+}
+.body {
+  flex-grow: 1;
+  margin-left: 270px;
+}
+.heading {
+  display: inline;
+}
+
+.master {
+  color: #000;
+  font-family: Inter;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 34px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.body-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: 7px;
+}
+.customer {
+  width: 330px;
+  height: 90px;
+  border-radius: 7px;
+  border: 1px solid #bcbcbc;
+  background: #fdfdfd;
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  padding: 20px;
+  margin-top: 25px;
+  margin-left: 35px;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.customer:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.items {
+  width: 330px;
+  height: 90px;
+  border-radius: 7px;
+  border: 1px solid #bcbcbc;
+  background: #fdfdfd;
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.heading {
+  margin-top: 20px;
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main-heading {
+  color: #000;
+  font-family: Inter;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.box {
+  position: relative;
+  display: flex;
+  width: 359px;
+  height: 120px;
+  border-radius: 7px;
+  border-radius: 7px;
+  border: 1px solid #bcbcbc;
+  background: #fdfdfd;
+  box-shadow: 0px 2px 7px 0px;
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+
+  margin: 25px;
+  flex-direction: column;
+}
+.Add-btn {
+  height: 54px;
+  padding: 5px 35px;
+  border-radius: 11px;
+  background: #f7f7f7;
+  color: #1c274c;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.Add-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.active {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 99.208px;
+  height: 28.929px;
+  border-radius: 7px;
+  background: #c5fbca;
+  color: #00680a;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.span-active {
+  display: flex;
+  justify-content: center;
+}
+
+.In-Active {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 99.208px;
+  height: 28.929px;
+  border-radius: 7px;
+  background: #ffdada;
+  color: #b00707;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.span-active {
+  display: flex;
+  justify-content: center;
+}
+.Add-div {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+.customer-body {
+  margin-right: 5%;
+  margin-left: 270px;
+}
+input {
+  width: 345px;
+  height: 45px;
+  background: #f4f4f4;
+  border: 0px;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:hover {
+  transform: scale(1.05);
+}
+
+input:focus {
+  font-size: 18px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-box {
+  color: #000;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  margin: 25px 25px;
+  margin-left: 34px;
+}
+label {
+  margin-bottom: 7px;
+}
+
+select {
+  width: 194px;
+  height: 57px;
+  background: #f4f4f4;
+  border: 0px;
+  border-radius: 7px;
+  color: #000;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.Cancel-btn,
+.Create-btn {
+  width: 121px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  line-height: normal;
+  margin: 10px;
+  margin-left: 34px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.Cancel-btn {
+  border: 1px solid #f00;
+  background: #fff8f8;
+  color: #f00;
+  font-weight: 500;
+}
+
+.Create-btn {
+  border: none;
+  background: #262562;
+  color: #fff;
+  font-weight: 700;
+}
+
+.Cancel-btn:hover {
+  background: #f00;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.Create-btn:hover {
+  background: #364f9d;
+  color: #fff;
+}
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffdada;
+  color: #b00707;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}
+.box:hover .delete-button {
+  display: block;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  position: relative;
+  max-width: 80%;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.card-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+.customer-container {
+  height: 310px;
+  width: 1212px;
+  /* border: 1px solid black; */
+  margin-left: 34px;
+  margin-top: 30px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+hr {
+  margin-top: 10px;
+}
+.center-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+.details {
+  padding: 15px;
+}
+p {
+  padding-left: 20px;
+  padding-top: 14px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.space {
+  margin-top: 50px;
+}
+.laptop {
+  padding-left: 20px;
+  padding-top: 14px;
+  margin-top: 30px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.horizontal-space {
+  margin-top: 30px;
+}
+.main-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.div1 {
+  align-self: flex-start;
+}
+
+.div2 {
+  align-self: center;
+  width: 100px;
+}
+.div3 {
+  align-self: flex-end;
+  margin-right: 50px;
+}
+
+#quantity {
+  width: 30px;
+  height: 15px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.pointer {
+  cursor: pointer;
+}
+.button {
+  background-color: #f6f6f6;
+  color: #262562;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Style for the number display */
+.span.number {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+/* Center the elements horizontally */
+.span {
+  display: flex;
+  align-items: center;
+}
+.btnspan {
+  margin-top: 10px;
+  padding: 10px;
+}
+.disable {
+  position: relative;
+  display: flex;
+  width: 359px;
+  height: 120px;
+  border-radius: 7px;
+  border-radius: 7px;
+  border: 1px solid #bcbcbc;
+  background-color: #e2e2e2;
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  margin: 25px;
+  flex-direction: column;
+}
+.main-div2 {
+  display: flex;
+  flex-direction: row;
+}
+.white {
+  color: #f0f0f0;
+}
+.btndiv {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.boss {
+  width: 1212px;
+}
+thead {
+  background-color: #262562;
+  color: #ffffff;
+}
+tbody {
+  background-color: #f9f9f9;
+  color: #000000;
+  padding: 20px;
+  margin-top: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 20px;
+}
+
+.Viewbutton {
+  width: 121px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  line-height: normal;
+  margin: 10px;
+  margin-left: 34px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  background-color: #0074cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.Viewbutton:hover {
+  background-color: #005aa5;
+}
+
+.Search {
+  margin-left: 34px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.invoiceId {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+.invoiceDiv {
+  position: absolute;
+  right: 20px;
+}
+.gst {
+  position: relative;
+}
+.gstAmount {
+  position: absolute;
+  right: 90px;
+}
