@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Billing Dashboard React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Billing Dashboard is a React web application designed to simplify the process of managing and creating bills for items and customers. This application allows users to add items and customers to the master database, create bills for selected items and customers, and view previous bills in a user-friendly dashboard.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### 1. Billing Dashboard - Master
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In the "Master" section of the Billing Dashboard, you can perform the following actions:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Add Items**: You can add items to the master database. Each item should have a name, description, price, and stock status. Inactive items, which are similar to "out of stock" items, cannot be selected when creating bills.
 
-### `npm test`
+- **Add Customers**: You can add customers to the master database. Each customer should have a name, contact information, and optionally, a GST (Goods and Services Tax) number. If a customer has a GST number, the system will automatically charge 18% GST on their bills.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Billing
 
-### `npm run build`
+In the "Billing" section of the application, you can create bills for customers using the items from the master database. Here's how it works:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Select Customer**: Choose a customer from the list of customers in the master database.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Add Items to Bill**: Select items from the list of available items in the master database to include them in the bill. Inactive items cannot be selected.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Calculate Total**: The application will automatically calculate the total amount for the bill, including GST if applicable.
 
-### `npm run eject`
+- **Generate Invoice ID**: After finalizing the bill, an invoice ID will be generated and associated with the bill. This ID can be used for reference and searching in the future.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Dashboard
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In the "Dashboard" section of the application, you can view and search for previous bills:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **View Previous Bills**: A table displays all previous bills, including the invoice ID, customer information, total amount, and date.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Search by Invoice ID**: You can search for a specific bill by entering its invoice ID in the search field. The table will filter out the results based on your search criteria.
 
-## Learn More
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To run the Billing Dashboard React App locally, follow these steps:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository to your local machine:
 
-### Code Splitting
+2. Navigate to the project directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Install dependencies:
 
-### Analyzing the Bundle Size
+4. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application will be accessible in your web browser at `http://localhost:3000`.
 
-### Making a Progressive Web App
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- React: The frontend is built using the React JavaScript library for building user interfaces.
+- CSS: Styling is implemented using CSS to create an attractive and user-friendly interface.
 
-### Advanced Configuration
+## Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This Billing Dashboard React App was developed by Brijesh. If you have any questions or encounter any issues, please feel free to contact us.
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the [License Name]. See the [LICENSE](LICENSE) file for details.
 
-### `npm run build` fails to minify
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We would like to thank the React community and the developers of any libraries or tools used in this project for their contributions to open source software.
+
+Thank you for using the Billing Dashboard React App! We hope it helps streamline your billing and invoicing processes. If you have any feedback or suggestions for improvements, please let us know.
